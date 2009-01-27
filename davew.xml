@@ -12,14 +12,15 @@
     <docs>http://stories.scripting.com/2007/02/16/whatIsCodecasting.html</docs>
     <generator>OPML Editor v0.73</generator>
     <item>
-      <guid>1</guid>
+      <link>http://www.w3schools.com/rss</link>
       <title>instantOutlineSuite.init</title>
       <description>Delete the everyMinute script if it&apos;s already installed.</description>
       <pubDate>Tue, 27 Jan 2009 17:03:07 GMT</pubDate>
       <enclosure url="http://bits.codecasting.org/instantOutline.root/00026.part" size="9386" type="application/x-frontier-scpt"/>
       </item>
     <item>
-      <guid>2</guid>
+      <link>http://www.w3schools.com/rss1</link>
+      <title>instantOutlineSuite.init</title>
       <title>instantOutlineSuite.background.everyHour</title>
 
       <description>While we&apos;re in active testing, update every hour. Later we may want to comment this and let builtins.opmlEditor do the updating once every night.</description>
