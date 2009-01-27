@@ -7,26 +7,26 @@
     <language>en-us</language>
 
     <copyright>Copyright 2007-2009 Scripting News, Inc.</copyright>
-    <pubDate>Tue, 27 Jan 2009 17:03:07 GMT</pubDate>
-    <lastBuildDate>Tue, 27 Jan 2009 17:03:07 GMT</lastBuildDate>
+    <pubDate>Tue, 27 Jan 2009 17:54:02 GMT</pubDate>
+    <lastBuildDate>Tue, 27 Jan 2009 17:54:02 GMT</lastBuildDate>
     <docs>http://stories.scripting.com/2007/02/16/whatIsCodecasting.html</docs>
     <generator>OPML Editor v0.73</generator>
     <item>
-      <link>http://www.w3schools.com/rss</link>
+
       <title>instantOutlineSuite.init</title>
       <description>Delete the everyMinute script if it&apos;s already installed.</description>
       <pubDate>Tue, 27 Jan 2009 17:03:07 GMT</pubDate>
-      <enclosure url="http://bits.codecasting.org/instantOutline.root/00026.part" size="9386" type="application/x-frontier-scpt"/>
+      <guid isPermaLink="true">http://bits.codecasting.org/instantOutline.root/00026.part</guid>
+      <enclosure url="http://bits.codecasting.org/instantOutline.root/00026.part" length="9386" type="application/x-frontier-scpt"/>
       </item>
-    <item>
-      <link>http://www.w3schools.com/rss1</link>
-      <title>instantOutlineSuite.init</title>
-      <title>instantOutlineSuite.background.everyHour</title>
 
+    <item>
+      <title>instantOutlineSuite.background.everyHour</title>
       <description>While we&apos;re in active testing, update every hour. Later we may want to comment this and let builtins.opmlEditor do the updating once every night.</description>
       <pubDate>Tue, 27 Jan 2009 16:57:38 GMT</pubDate>
-      <enclosure url="http://bits.codecasting.org/instantOutline.root/00024.part" size="682" type="application/x-frontier-scpt"/>
+      <guid isPermaLink="true">http://bits.codecasting.org/instantOutline.root/00024.part</guid>
+      <enclosure url="http://bits.codecasting.org/instantOutline.root/00024.part" length="682" type="application/x-frontier-scpt"/>
+
       </item>
     </channel>
   </rss>
-
