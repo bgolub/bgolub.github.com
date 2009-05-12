@@ -1,0 +1,1372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<script type="text/javascript">(function() { var a=window;function d(b){this.t={};this.tick=function(c,h,e){var i=e?e:(new Date).getTime();this.t[c]=[i,h]};this.tick("start",null,b)}var f=new d;a.jstiming={Timer:d,load:f};try{a.jstiming.pt=a.external.pageT}catch(g){};function j(b){var c=0;if(b.offsetParent){do c+=b.offsetTop;while(b=b.offsetParent)}return c}a.tickAboveFold=function(b){j(b)<=750&&a.jstiming.load.tick("aft")};var k=false;function l(){if(!k){k=true;a.jstiming.load.tick("firstScrollTime")}}a.addEventListener?a.addEventListener("scroll",l,false):a.attachEvent("onscroll",l); })();</script>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.blogger.com/favicon.ico' rel='icon' type='image/vnd.microsoft.icon'/>
+<link rel="alternate" type="application/atom+xml" title="Paul Buchheit - Atom" href="http://paulbuchheit.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Paul Buchheit - RSS" href="http://paulbuchheit.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Paul Buchheit - Atom" href="http://www.blogger.com/feeds/33042626/posts/default" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=33042626" />
+<link rel="openid.server" href="http://www.blogger.com/openid-server.g" />
+<title>Paul Buchheit</title>
+<style id='page-skin-1' type='text/css'><!--
+/*
+* Blogger Template Style
+* Name:     TicTac (Blueberry)
+* Author:   Dan Cederholm
+* URL:      www.simplebits.com
+* Date:     1 March 2004
+* Updated by: Blogger Team
+*/
+/* Variable definitions
+====================
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="pagetitlecolor" description="Page Header Color"
+type="color" default="#FFF">
+<Variable name="datecolor" description="Date Header Color"
+type="color" default="#999999">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#993333">
+<Variable name="footercolor" description="Post Footer Color"
+type="color" default="#999">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#999">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#666">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#69c">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#666699">
+<Variable name="bodyfont" description="Text Font"
+type="font"
+default="normal normal 100% Verdana, sans-serif">
+<Variable name="pagetitlefont" description="Page Header Font"
+type="font" default="normal normal 100% 'Lucida Grande','Trebuchet MS'">
+<Variable name="titlefont" description="Post Title Font"
+type="font" default="normal bold 130% 'Lucida Grande','Trebuchet MS'">
+<Variable name="sidebarheaderfont" description="Sidebar Title Font"
+type="font" default="normal bold 130% 'Lucida Grande','Trebuchet MS'">
+*/
+/* ---( page defaults )--- */
+body {
+margin: 0;
+padding: 0;
+font-size: small;
+text-align: center;
+color: #333333;
+background: #e0e0e0;
+}
+blockquote {
+margin: 0 0 0 30px;
+padding: 10px 0 0 20px;
+font-size: 88%;
+line-height: 1.5em;
+color: #666;
+background: url(http://www.blogblog.com/tictac_blue/quotes.gif) no-repeat top left;
+}
+blockquote p {
+margin-top: 0;
+}
+abbr, acronym {
+cursor: help;
+font-style: normal;
+border-bottom: 1px dotted;
+}
+code, pre {
+line-height: 1.1em;
+color: #996666;
+margin-left:1em;
+}
+hr {
+display: none;
+}
+img {
+border: none;
+}
+/* unordered list style */
+ul {
+list-style: none;
+margin-left: 10px;
+padding: 0;
+}
+ul > li {
+list-style: none;
+padding-left: 14px;
+margin-bottom: 3px;
+background: url(http://www.blogblog.com/tictac_blue/tictac_blue.gif) no-repeat 0 6px;
+}
+/* links */
+a:link {
+color: #6699cc;
+}
+a:visited {
+color: #666699;
+}
+a:hover {
+color: #5B739C;
+}
+a:active {
+color: #5B739C;
+text-decoration: none;
+}
+/* ---( layout structure )---*/
+#outer-wrapper {
+width: 847px;
+margin: 0px auto 0;
+text-align: left;
+font: normal normal 100% Verdana, sans-serif;
+background: url(http://www.blogblog.com/tictac_blue/tile.gif) repeat-y;
+}
+#content-wrapper {
+margin-left: 42px; /* to avoid the border image */
+width: 763px;
+}
+#main {
+float: left;
+width: 460px;
+margin: 20px 0 0 0;
+padding: 0 0 0 1em;
+line-height: 1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#sidebar {
+float: right;
+width: 259px;
+padding: 20px 0px 0 0;
+font-size: 85%;
+line-height: 1.4em;
+color: #999999;
+background: url(http://www.blogblog.com/tictac_blue/sidebar_bg.gif) no-repeat 0 0;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+/* ---( header and site name )--- */
+#header-wrapper {
+margin: 0;
+padding: 0;
+font: normal normal 100% 'Lucida Grande','Trebuchet MS';
+background: #e0e0e0 url(http://www.blogblog.com/tictac_blue/top_div_blue.gif) no-repeat 0px 0px;
+}
+#header {
+margin: 0;
+padding: 25px 60px 35px 160px;
+color: #FFFFFF;
+background: url(http://www.blogblog.com/tictac_blue/top_h1.gif) no-repeat bottom left;
+}
+#header h1 {
+font-size: 200%;
+text-shadow: #4F73B6 2px 2px 2px;
+}
+#header h1 a {
+text-decoration: none;
+color: #FFFFFF;
+}
+#header h1 a:hover {
+color: #eee;
+}
+/* ---( main column )--- */
+h2.date-header {
+margin-top: 0;
+padding-left: 14px;
+font-size: 90%;
+color: #999999;
+background: url(http://www.blogblog.com/tictac_blue/date_icon_blue.gif) no-repeat 0 50%;
+}
+.post h3 {
+margin-top: 0;
+font: normal bold 130% 'Lucida Grande','Trebuchet MS';
+letter-spacing: -1px;
+color: #993333;
+}
+.post {
+margin: 0 0 1.5em 0;
+padding: 0 0 1.5em 14px;
+border-bottom: 1px solid #ddd;
+}
+.post h3 a,
+.post h3 a:visited {
+color: #993333;
+text-decoration: none;
+}
+.post-footer {
+margin: 0;
+padding: 0 0 0 14px;
+font-size: 88%;
+color: #999999;
+background: url(http://www.blogblog.com/tictac_blue/tictac_grey.gif) no-repeat 0 8px;
+}
+.post img {
+padding: 6px;
+border-top: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-bottom: 1px solid #c0c0c0;
+border-right: 1px solid #c0c0c0;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+/* comment styles */
+#comments {
+padding-top: 10px;
+font-size: 85%;
+line-height: 1.5em;
+color: #666;
+background: #eee url(http://www.blogblog.com/tictac_blue/comments_curve.gif) no-repeat top left;
+}
+#comments h4 {
+margin: 20px 0 15px 0;
+padding: 8px 0 0 40px;
+font-family: "Lucida Grande", "Trebuchet MS";
+font-size: 130%;
+color: #666;
+background: url(http://www.blogblog.com/tictac_blue/bubbles.gif) no-repeat 10px 0;
+height: 29px !important; /* for most browsers */
+height /**/:37px; /* for IE5/Win */
+}
+#comments ul {
+margin-left: 0;
+}
+#comments li {
+background: none;
+padding-left: 0;
+}
+.comment-body {
+padding: 0 10px 0 25px;
+background: url(http://www.blogblog.com/tictac_blue/tictac_blue.gif) no-repeat 10px 5px;
+}
+.comment-body p {
+margin-bottom: 0;
+}
+.comment-author {
+margin: 4px 0 0 0;
+padding: 0 10px 0 60px;
+color: #999;
+background: url(http://www.blogblog.com/tictac_blue/comment_arrow_blue.gif) no-repeat 44px 2px;
+}
+.comment-footer {
+border-bottom: 1px solid #ddd;
+padding-bottom: 1em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+/* ---( sidebar )--- */
+.sidebar h2 {
+margin: 0 0 0 0;
+padding: 25px 0 0 40px;
+font: normal bold 130% 'Lucida Grande','Trebuchet MS';
+color: #666666;
+height: 32px;
+background: url(http://www.blogblog.com/tictac_blue/sidebar_icon.gif) no-repeat 10px 15px;
+height: 32px !important; /* for most browsers */
+height /**/:57px; /* for IE5/Win */
+}
+.sidebar .widget {
+margin: 0;
+padding: 0 0 10px 10px;
+border-bottom: 1px solid #ddd;
+}
+.sidebar li {
+background: url(http://www.blogblog.com/tictac_blue/tictac_blue.gif) no-repeat 0 5px;
+}
+.profile-textblock {
+clear: both;
+margin-left: 0;
+}
+.profile-img {
+float: left;
+margin: 0 5px 5px 0;
+border: 1px solid #ddd;
+padding: 4px;
+}
+.profile-datablock {
+font-size: larger;
+color: #000000;
+}
+/* ---( footer )--- */
+.clear { /* to fix IE6 padding-top issue */
+clear: both;
+}
+#footer-wrapper {
+margin: 0;
+padding: 0 0 9px 0;
+font-size: 85%;
+color: #ddd;
+background: url(http://www.blogblog.com/tictac_blue/bottom_sill.gif) no-repeat bottom left;
+}
+#footer {
+margin: 0;
+padding: 20px 320px 20px 95px;
+background: url(http://www.blogblog.com/tictac_blue/bottom_sash.gif) no-repeat top left;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #outer-wrapper,
+body#layout #main,
+body#layout #sidebar {
+padding-top: 0;
+margin-top: 0;
+}
+body#layout #outer-wrapper,
+body#layout #content-wrapper {
+width: 740px;
+}
+body#layout #sidebar {
+margin-right: 0;
+margin-bottom: 1em;
+}
+body#layout #header,
+body#layout #footer,
+body#layout #main {
+padding: 0;
+}
+body#layout #content-wrapper {
+margin: 0px;
+}
+
+--></style>
+<link type='text/css' rel='stylesheet' href='http://www.blogger.com/static/v1/widgets/2300090209-widget_css_bundle.css' /> <link rel="stylesheet" type="text/css" href="http://www.blogger.com/static/v1/v-css/3727950723-blog_controls.css"/>
+ <link rel="stylesheet" type="text/css" href="http://www.blogger.com/dyn-css/authorization.css?targetBlogID=33042626&zx=c9746af8-6215-44f3-aa6b-f7fcc03204b4"/>
+<style type="text/css">#navbar-iframe { display:block }
+</style>
+
+</head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener("load",
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<iframe src="http://www.blogger.com/navbar.g?targetBlogID=33042626&amp;blogName=Paul+Buchheit&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=SILVER&amp;layoutType=LAYOUTS&amp;homepageUrl=http%3A%2F%2Fpaulbuchheit.blogspot.com%2F&amp;blogLocale=en_US&amp;searchRoot=http%3A%2F%2Fpaulbuchheit.blogspot.com%2Fsearch" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="30px" width="100%" id="navbar-iframe" title="Blogger Navigation and Search"></iframe>
+<div></div></div></div>
+<div id='outer-wrapper'><div id='wrap2'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+Paul Buchheit
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id='content-wrapper'>
+<div id='main-wrapper'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start -->
+<h2 class='date-header'>Friday, April 17, 2009</h2>
+<div class='post uncustomized-post-template'>
+<a name='4174154533548259382'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2009/04/make-your-site-faster-and-cheaper-to.html'>Make your site faster and cheaper to operate in one easy step</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>Is your web server using using <a href="http://www.websiteoptimization.com/speed/tweak/compress/">gzip encoding</a>? Surprisingly, many are not. I just wrote a little script to fetch the 30 external links off <a href="http://news.ycombinator.com">news.yc</a> and check if they are using gzip encoding. Only 18 were, which means that the other 12 sites are needlessly slow, and also wasting money on bandwidth. <br><br><a href="http://gzipcheck.appjet.net/">Check your site here</a>.<br>  <br>Some people think gzip is &quot;too slow&quot;. It&#39;s not. Here&#39;s an example (run on my laptop) using data from one of the links on <a href="http://news.ycombinator.com">news.ycombinator.com</a>:<br><span style="font-family: courier new,monospace;">$ cat &lt; /tmp/sd.html | wc -c</span><br style="font-family: courier new,monospace;">  <span style="font-family: courier new,monospace;">146117</span><br style="font-family: courier new,monospace;"><span style="font-family: courier new,monospace;">$ gzip &lt; /tmp/sd.html | wc -c</span><br style="font-family: courier new,monospace;">  <span style="font-family: courier new,monospace;">35481</span><br style="font-family: courier new,monospace;"><span style="font-family: courier new,monospace;">$ time gzip &lt; /tmp/sd.html &gt;/dev/null</span><br style="font-family: courier new,monospace;">  <span style="font-family: courier new,monospace;">real&#160;&#160;&#160; 0m0.009s</span><br style="font-family: courier new,monospace;"><span style="font-family: courier new,monospace;">user&#160;&#160;&#160; 0m0.004s</span><br style="font-family: courier new,monospace;">  <span style="font-family: courier new,monospace;">sys&#160; &#160;&#160; 0m0.004s</span><br style="font-family: courier new,monospace;"><br>It took 9ms to compress 146,117 bytes of html (and that includes process creation time, etc), and the compressed data was only about 24% the size of the input. At that rate, compressing 1GB of data would require about 66 seconds of cpu time. Repeating the test with a much larger file results yields about 42 sec/GB, so 66 sec is not an unreasonable estimate.<br>  <br>Inevitably, someone will argue that they can&#39;t spare a few ms per page to compress the data, even though it will make their site much more responsive. However, it occured to me today that thanks to Amazon, it&#39;s very easy to compare CPU vs Bandwidth. According to their <a href="http://aws.amazon.com/ec2/#pricing">pricing page</a>, a &quot;small&quot; (single core) instance cost $0.10 / hour, and data transfer out costs $0.17 / GB (though it goes down to $0.10 / GB if you use over 150 TB / month, which you probably don&#39;t).<br>  <br>Using these numbers, we can estimate that it would cost $1.88 to gzip 1TB of data on Amazon EC2, and $174 to transfer 1TB of data. If you instead compress your data (and get 4-to-1 compression, which is not unusual for html), the bandwidth will only cost $43.52.<br>  <br>Summary:<br><b>with gzip</b>: $1.88 for cpu + $43.52 for bandwidth = <b>$45.40 + happier users</b><br><br><b>without gzip</b>: $174.00 for bandwidth = <b>$128.60 wasted + less happy users</b> <br><br>The other excuse for not gzipping content is that your webserver doesn&#39;t support it for some reason. Fortunately, there&#39;s a simple solution: put <a href="http://nginx.net/">nginx</a> in front of your servers. That&#39;s what we do at <a href="http://friendfeed.com/">FriendFeed</a>, and it works very well (we use a custom, epoll-based python server). Nginx acts as a proxy -- outside requests connect to nginx, and nginx connects to whatever webserver you are already using (and along the way it will compress your response, and do other good stuff).<br></p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2009/04/make-your-site-faster-and-cheaper-to.html' title='permanent link'>2:21 AM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2009/04/make-your-site-faster-and-cheaper-to.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=4174154533548259382' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Thursday, January 22, 2009</h2>
+<div class='post uncustomized-post-template'>
+<a name='6914636547613331985'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2009/01/communicating-with-code.html'>Communicating with code</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>Some people can sell their ideas with a brilliant speech or a slick powerpoint presentation.<br><br>I can&#39;t.<br><br>Maybe that&#39;s why I&#39;m skeptical of ideas that are sold via brilliant speeches and slick powerpoints. Or maybe it&#39;s because it&#39;s too easy to overlook the messy details, or to get caught up in details that seem very important, but aren&#39;t. I also get very bored by endless debate.<br> <br>We did a lot of things wrong during the <a href="http://paulbuchheit.blogspot.com/2009/01/overnight-success-takes-long-time.html">2.5 years of pre-launch Gmail development</a>, but one thing we did very right was to always have live code. The first version of Gmail was literally written in a day. It wasn&#39;t very impressive -- all I did was take the Google Groups (Usenet search) code (my previous project) and stuff my email into it -- but it was live and people could use it (to search my mail...). From that day until launch, every new feature went live immediately, and most new ideas were implemented as soon as possible. This resulted in a lot of churn -- we re-wrote the frontend about six times and the backend three times by launch -- but it meant that we had direct experience with all of the features. A lot of features seemed like great ideas, until we tried them. Other things seemed like they would be big problems or very confusing, but once they were in we forgot all about the theoretical problems.<br> <br>The great thing about this process was that I didn&#39;t need to sell anyone on my ideas. I would just write the code, release the feature, and watch the response. Usually, everyone (including me) would end up hating whatever it was (especially my ideas), but we always learned something from the experience, and we were able to quickly move on to other ideas.<br> <br>The most dramatic example of this process was the creation of content targeted ads (now known as &quot;AdSense&quot;, or maybe &quot;AdSense for Content&quot;). The idea of targeting our keyword based ads to arbitrary content on the web had been floating around the company for a long time -- it was &quot;obvious&quot;. However, it was also &quot;obviously bad&quot;. Most people believed that it would require some kind of fancy artificial intelligence to understand the content well enough to target ads, and even if we had that, nobody would click on the ads. I thought they were probably right.<br> <br>However, we needed a way for Gmail to make money, and Sanjeev Singh kept talking about using relevant ads, even though it was obviously a &quot;bad idea&quot;. I remained skeptical, but thought that it might be a fun experiment, so I connected to that ads database (I assure you, random engineers can no longer do this!), copied out all of the ads+keywords, and did a little bit of sorting and filtering with some unix shell commands. I then hacked up the &quot;adult content&quot; classifier that Matt Cutts and I had written for safe-search, linked that into the Gmail prototype, and then loaded the ads data into the classifier. My change to the classifier (which completely broke its original functionality, but this was a separate code branch) changed it from classifying pages as &quot;adult&quot;, to classifying them according to which ad was most relevant. The resulting ad was then displayed in a little box on our Gmail prototype ui. The code was rather ugly and hackish, but more importantly, it only took a few hours to write!<br> <br>I then released the feature on our unsuspecting userbase of about 100 Googlers, and then went home and went to sleep. The response when I returned the next day was not what I would classify as &quot;positive&quot;. Someone may have used the word &quot;blasphemous&quot;. I liked the ads though -- they were amusing and often relevant. An email from someone looking for their lost sunglasses got an ad for new sunglasses. The lunch menu had an ad for balsamic vinegar.<br> <br>More importantly, I wasn&#39;t the only one who found the ads surprisingly relevant. Suddenly, content targeted ads switched from being a lowest-priority project (unstaffed, will not do) to being a top priority project, an extremely talented team was formed to build the project, and within maybe six months a live beta was launched. Google&#39;s content targeted ads are now a big business with billions of dollars in revenue (I think).<br> <br>Of course none of the code from my prototype ever made it near the real product (thankfully), but that code did something that fancy arguments couldn&#39;t do (at least not my fancy arguments), it showed that the idea and product had real potential.<br> <br>The point of this story, I think, is that you should consider spending less time talking, and more time prototyping, especially if you&#39;re not very good at talking or powerpoint. Your code can be a very persuasive argument.<br> <br>The other point is that it&#39;s important to make prototyping new ideas, especially bad ideas, as fast and easy as possible. This can be especially difficult as a product grows. It was easy for me to stuff random broken features into Gmail when there were only about 100 users and they all worked for Google, but it&#39;s not so simple when there are 100 million users.<br> <br>Fortunately for Gmail, they&#39;ve recently found a rather clever solution that enables the thousands of Google engineers to add new ui features: <a href="http://gmailblog.blogspot.com/2008/06/introducing-gmail-labs.html">Gmail Labs</a>. This is also where Google&#39;s &quot;20% time&quot; comes in -- if you want innovation, it&#39;s critical that people are able to work on ideas that are unapproved and generally thought to be stupid. The real value of &quot;20%&quot; is not the time, but rather the &quot;license&quot; it gives to work on things that &quot;aren&#39;t important&quot;. (perhaps I should do a post on &quot;20% time&quot; at some point...)<br> <br>One of the best ways to enable prototyping and innovation on an established product is though an API. Twitter is possibly the best example of how well this can work. There are thousands of different Twitter clients, with new ones being written every day, and I believe a majority of Twitter messages are entered though one of these third-party clients.<br> <br>Public APIs enable everyone to experiment with new ideas and create new ways of using your product. This is incredibly powerful because no matter how brilliant you and your coworkers are, there are always going to be smarter people outside of your company. <br> <br>At FriendFeed, we discovered that <a href="http://code.google.com/p/friendfeed-api/wiki/ApiDocumentation">our API</a> does more than enable great apps, it also reveals great app developers. <a href="http://blog.friendfeed.com/2008/06/welcome-gary-burd-to-friendfeed.html">Gary</a> and <a href="http://blog.friendfeed.com/2008/09/introducing-benjamin-golub-another-new.html">Ben</a> were both writing FriendFeed apps using our API before we hired them. When hiring, you don&#39;t have to guess which people are &quot;smart and gets things done&quot;, you can simply observe it in the wild :)<br> <br><br>In my <a href="http://paulbuchheit.blogspot.com/2009/01/overnight-success-takes-long-time.html">previous post</a>, I asked people to describe their &quot;ideal FriendFeed&quot;. Since then, I&#39;ve been thinking about ideas for my &quot;ideal FriendFeed&quot;. Unfortunately, it&#39;s very difficult for me to know how much I like an idea based only on words or mockups -- I really need to try it out. So in the spirit of prototyping, I&#39;ve used my spare time to write a simple FriendFeed interface that prototypes some of the things I&#39;ve been thinking about. This interface isn&#39;t the &quot;future of FriendFeed&quot;, it&#39;s just a collection of ideas, some that I like, and some that I don&#39;t. One thing that&#39;s kind of cool about it (from a prototyping perspective) is that it&#39;s written entirely in Javascript running in the web browser -- it&#39;s just a single web page that uses FriendFeed&#39;s JSON APIs to fetch data. This also means that it&#39;s relatively easy for other people to copy and change -- you don&#39;t even need a server!<br><br><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_4sbxCBha3lY/SXhP4Qq68II/AAAAAAAAHIA/Y4Dz6Vuhy50/s1600-h/Picture+44.png"><img style="cursor:pointer; cursor:hand;width: 400px; height: 292px;" src="http://2.bp.blogspot.com/_4sbxCBha3lY/SXhP4Qq68II/AAAAAAAAHIA/Y4Dz6Vuhy50/s400/Picture+44.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5294069189940277378" /></a> <br><br>If you&#39;d like to try it out, you can see <a href="http://paulbuchheit.github.com/xfeed.html#paul">everyone that I&#39;m subscribed to</a> (assuming their feed is public), or if you are a FriendFeed user, you can see all of your public subscriptions by going to <b>http://paulbuchheit.github.com/xfeed.html#YOUR_NICKNAME_GOES_HERE</b>. The complete source code (which is just several hundred lines of HTML and JS) is <a href="http://github.com/paulbuchheit/paulbuchheit.github.com/blob/master/xfeed.html">here</a>. In this prototype, I&#39;m experimenting with treating entries, comments, and likes all as simple &quot;messages&quot;, only showing comments from the user&#39;s friends (which can be a little confusing), and putting it all in reverse-chronological order. As I mentioned, this interface isn&#39;t the &quot;future of FriendFeed&quot;, it&#39;s just a collection of ideas that I&#39;m playing with.<br> <br>If you&#39;re interested in prototyping something, feel free to take this code and have your way with it. As always, I&#39;d love to see your prototypes action!<br><br><br><br></p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2009/01/communicating-with-code.html' title='permanent link'>2:36 AM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2009/01/communicating-with-code.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=6914636547613331985' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Tuesday, January 06, 2009</h2>
+<div class='post uncustomized-post-template'>
+<a name='7915136260348012193'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2009/01/if-youre-kind-of-person-who-likes-to.html'>If you're the kind of person who likes to vote...</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>Now is your opportunity!<br /><br />FriendFeed was nominated for three "Crunchies". Please vote for us in all three categories:<br /><a target="_blank" href="http://crunchies2008.techcrunch.com/votes/?nominee_id=64&category_id=12"><img src="http://crunchies2008.techcrunch.com/wp-content/themes/crunchies/images/vote_badges/12.png" /></a><br /><a target="_blank" href="http://crunchies2008.techcrunch.com/votes/?nominee_id=71&category_id=14"><img src="http://crunchies2008.techcrunch.com/wp-content/themes/crunchies/images/vote_badges/14.png" /></a><br /><a target="_blank" href="http://crunchies2008.techcrunch.com/votes/?nominee_id=19&category_id=4"><img src="http://crunchies2008.techcrunch.com/wp-content/themes/crunchies/images/vote_badges/4.png" /></a><br /><br />I can't promise that your vote will end the war, fix the economy, or save the environment (that one is <a target="_blank" href="http://crunchies2008.techcrunch.com/votes/?nominee_id=57&category_id=11">here</a>), but I can promise that your vote might be counted.</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2009/01/if-youre-kind-of-person-who-likes-to.html' title='permanent link'>12:44 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2009/01/if-youre-kind-of-person-who-likes-to.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=7915136260348012193' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Sunday, January 04, 2009</h2>
+<div class='post uncustomized-post-template'>
+<a name='2642710307095223226'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2009/01/overnight-success-takes-long-time.html'>Overnight success takes a long time</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>For some reason, this weekend has seen a lot of talk about what <a href="http://friendfeed.com/" target="_blank">FriendFeed</a> is/isn&#39;t/should be doing (see <a href="http://www.louisgray.com/live/2009/01/what-friendfeed-needs-to-do-to-grow-and.html" target="_blank">Louis Gray</a> and <a href="http://www.techmeme.com/090103/p16#a090103p16" target="_blank">others</a>). One person even predicted that we will <a href="http://www.stoweboyd.com/message/2009/01/lewis-gray-on-w.html" target="_blank">fail</a>.<br> <br>I considered writing my own list of complaints about FriendFeed. I think and care about it a lot more than most people, so my list of FriendFeed issues would be a lot longer. I may still do that, but there&#39;s something else also worth discussing...<br>  <br>One of the benefits of experience is that it gives some degree of perspective. Of course there&#39;s a huge risk of overgeneralizing (<a href="http://blog.daryn.net/post/32264049/paul-buchheit-limited-life-experience" target="_blank">someone took a picture!</a>), but with that in mind...<br>  <br>We starting working on Gmail in August (or September?) 2001. For a long time, almost everyone disliked it. Some people used it anyway because of the search, but they had endless complaints. Quite a few people thought that we should kill the project, or perhaps &quot;reboot&quot; it as an enterprise product with native client software, not this crazy Javascript stuff. Even when we got to the point of launching it on April 1, 2004 (two and a half years after starting work on it), many people inside of Google were predicting doom. The product was too weird, and nobody wants to change email services. I was told that we would never get a million users.<br>  <br>Once we launched, the response was surprisingly positive, except from the people who hated it for a variety of reasons. Nevertheless, it was frequently described as &quot;niche&quot;, and &quot;not used by real people outside of silicon valley&quot;.<br>  <br>Now, almost 7 and a half years after we started working on Gmail, I see things like <a href="http://www.ft.com/cms/s/0/18cdabec-d8fb-11dd-ab5f-000077b07658.html" target="_blank">this</a>:<br><blockquote style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;" class="gmail_quote">  Yahoo and Microsoft have more than 250m users each worldwide for their webmail, according to the comScore research firm, compared to close to 100m for Gmail. But Google&#39;s younger service, launched in 2004, has been <b>gaining ground in the US over the past year, with users growing by more than 40 per cent, compared to 2 per cent for Yahoo and a 7 per cent fall in users of Microsoft&#39;s webmail</b>.<br></blockquote><br>And that probably isn&#39;t counting all of the &quot;<a href="http://www.google.com/apps/intl/en/business/index.html" target="_blank">Apps for your domain</a>&quot; users. I still have a huge list of complaints about Gmail, by the way.<br>  <br>It would be a huge mistake for me to assume that just because Gmail did eventually take off, then the same thing will happen to FriendFeed. They are very different products, and maybe we just got lucky with Gmail.<br> <br>However, it does give some perspective. Creating an important new product generally takes time. FriendFeed needs to continue changing and improving, just as Gmail did six years ago (there are some <a href="http://friendfeed.com/search?q=screenshots&amp;who=paul#" target="_blank">screenshots</a> around if you don&#39;t believe me). FriendFeed shows a lot of promise, but it&#39;s still a &quot;work in progress&quot;.<br>  <br>My expectation is that big success takes years, and there aren&#39;t many counter-examples (other than YouTube, and they didn&#39;t actually get to the point of making piles of money just yet). Facebook grew very fast, but it&#39;s almost 5 years old at this point. Larry and Sergey started working on <a href="http://friendfeed.com/e/e78ff179-3f7d-43b6-b346-078c74c9fc20/Q-Setting-User-Agent-Field-comp-lang-java-Google/" target="_blank">Google in 1996</a> -- when I started there in 1999, few people had heard of it yet.<br>  <br>This notion of overnight success is very misleading, and rather harmful. If you&#39;re starting something new, expect a long journey. That&#39;s no excuse to move slow though. To the contrary, you must move very fast, otherwise you will never arrive, because it&#39;s a long journey! This is also why it&#39;s important to be frugal -- you don&#39;t want to starve to death half the way <a href="http://paulbuchheit.blogspot.com/2008/03/ideas-vs-judgment-and-execution_9197.html" target="_blank">up the mountain</a>.<br>  <br>Getting back to FriendFeed, I&#39;m always concerned when I hear complaints about the service. However, I&#39;m also encouraged by the complaints, because it means that people care about the product. In fact, they care so much that they write long blog posts about what we should do differently. It&#39;s clear that our product isn&#39;t quite right and needs to evolve, but the fact that people are giving it so much thought tells me that we are at least headed in roughly the right direction. I would be much more concerned if there were silence and nobody cared about what we are doing -- it would mean that we are &quot;off in the weeds&quot;, as they say. Getting this kind of valuable feedback is one of the major benefits of launching early.<br>  <br>If you&#39;d like to contribute (and I hope you do), I&#39;d love to read more of your visions of &quot;the perfect FriendFeed&quot;. Describe what would make FriendFeed perfect for YOU, and post it on your blog (or email <a href="mailto:post@posterous.com?subject=My%20First%20Blog%20Post&amp;body=Replace%20the%20subject%20line%20and%20body%20with%20your%20first%20blog%20post%20and%20hit%20send%21%20Include%20pictures,%20an%20mp3,%20or%20anything%20else%20you%20want%20to%20share.%20It%27s%20just%20that%20simple." target="_blank">post@posterous.com</a> if you don&#39;t have a blog -- they create them automatically). Feel free to drop or change features in any way you like. Yes, technically you&#39;re doing my work for me, but it&#39;s mutually beneficial because we&#39;ll do our best to create a product that you like, and even if we don&#39;t, maybe someone else will (since the concepts are out there for everyone).<br>  <br> </p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2009/01/overnight-success-takes-long-time.html' title='permanent link'>3:31 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2009/01/overnight-success-takes-long-time.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=2642710307095223226' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Saturday, January 03, 2009</h2>
+<div class='post uncustomized-post-template'>
+<a name='1052999830600560518'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2009/01/question-is-wrong.html'>The question is wrong</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>On &quot;Coding Horror&quot;, Jeff Atwood <a href="http://www.codinghorror.com/blog/archives/001204.html">asked this question</a>:<br><blockquote style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;" class="gmail_quote"> Let&#39;s say, hypothetically speaking, you met someone who told you they had two children, and one of them is a girl. <b>What are the odds that person has a boy and a girl?</b><br></blockquote><br>He then argues that our intuition leads us to the &quot;wrong&quot; answer (50%) instead of the &quot;correct&quot; answer (2/3 or 67%).<br> <br>However, the question does not include enough information to determine which of these answers is actually correct, so the only truly correct answer is, &quot;I don&#39;t know&quot; or &quot;it depends&quot;. I skimmed though the comments on the post (there are about a million), and didn&#39;t see anyone addressing this issue (though someone probably did). They mostly argued about BG vs GB for some reason.<br> <br>The reason that this question is wrong is because it doesn&#39;t specify the &quot;algorithm&quot; for posing the question.<br><br>If we assume that boys and girls are born with equal probability (50/50, like flipping a coin), then families with two children will have two girls 25% of the time, two boys 25% of the time, and a boy and a girl 50% of the time.<br> <br>If the algorithm for posing the question is:<br><ol><li>Choose a random parent that has exactly two children</li><li>If the parent has two boys, eliminate him and choose another random parent</li><li>Ask about the odds that the parent has both a boy and a girl</li> </ol>Then we can see that step two eliminated the &quot;two boy&quot; possibility, which leaves the 25% probability of two girls and the 50% probability of both a boy and a girl. Of course probabilities should add up to 100%, so the final probabilities are&nbsp; 25/75 (1/3) for two girls and 50/75 (2/3) for both a boy and girl. This is the &quot;correct&quot; answer described by Jeff, and it occurs because of the elimination performed at step two.<br> <br>However, if the algorithm for posing the question was instead:<br><ol><li>Choose a random parent that has exactly two children</li><li>Arbitrarily announce the gender of one of the children</li><li>Ask about the odds that the parent has both a boy and a girl<br> </li></ol>Now we&#39;re back to having a 50% probability of there being both a boy and a girl. The difference is that there was no elimination at step two, and simply announcing the gender of one of the children does not affect the gender of the other child or change the probability distribution.<br> <br>The problem with the question as originally posed was that it didn&#39;t specify which of these algorithms was being used. Were we arbitrarily told about the girl, or was a selective process applied?<br><br>By the way, if we&#39;re applying a selective process, then 100% is also a possibly correct answer, because at step two we could have eliminated all parents that don&#39;t have both a boy and a girl. Likewise, all other probabilities are also potentially correct depending on the algorithm applied.<br> <br> <b>Update:</b> Surprisingly, some people are still thinking that my second algorithm yields 2/3 instead of 1/2 (see the <a href="http://news.ycombinator.com/item?id=418672">confused discussion</a> on news.yc). I think part of the reason is that I was somewhat imprecise with the concept of "elimination". The second algorithm does not eliminate any of the families, but if I announce that there is a boy, that does eliminate the possibility of two girls. This is where some people are getting lost and thinking that the boy+girl probability has become 2/3. The catch is that announcing the boy also reduced the boy+girl probability by an equal amount, so the result is still the same (it eliminated either BG or GB, I don't know which, but it doesn't matter).</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2009/01/question-is-wrong.html' title='permanent link'>12:41 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2009/01/question-is-wrong.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=1052999830600560518' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Tuesday, December 30, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='2089889173367988170'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/12/communication-and-collaboration-big.html'>communication and collaboration - the big upgrade</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>The responses to my blog are always a little surprising to me. Yesterday&#39;s post didn&#39;t have a whole lot of substance, but it did include one good product idea, which is to somehow let other people edit my posts.<br> <br>Someone <a href="http://news.ycombinator.com/item?id=413863">on news.yc</a> was not impressed by my idea though:<br><blockquote style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;" class="gmail_quote"> <span class="comment"><font color="#000000">I was going to disagree with those negative comments below but then read the blog and damn; this guy has a freaking ego to think people would want to edit his ramblings for him in any other way than comical..</font></span><br></blockquote><br>Next, I looked at the comments that were on my blog directly. One of the first ones was from Paul Graham, and <a href="http://paulbuchheit.blogspot.com/2008/12/blog-v2.html#comment-4738557">it said simply</a>:<br> <blockquote style="border-left: 1px solid rgb(204, 204, 204); margin: 0pt 0pt 0pt 0.8ex; padding-left: 1ex;" class="gmail_quote">deniable -&gt; deniability :-)<br></blockquote><br>Well, apparently Paul Graham wants to edit my ramblings, and in a way that would make me look smarter too... I&#39;m pretty sure that he would have just made the correction himself had it been as easy and obvious as leaving a comment, but unfortunately no blog software seems to do that, most especially not Blogger.com.<br> <br>Last year, someone <a href="http://utalam.wordpress.com/2007/12/13/is-there-more-to-life-than-moneychinese-ver-paul-buchheit/">translated one of my posts into Chinese</a> (and I had Google <a href="http://friendfeed.com/e/4488e55c-c5d2-423a-a4ae-c3f87792c679/This-is-why-we-have-created-FriendFeed-there-is-a/">translate it back</a>).<br> <br>This all reminds me of one of the blog posts that has been trapped in my head for a long time...<br><br>It starts off with something about ants, because my house must have been built on top of a giant anthill or something, because they are continually staging giant invasions and I&#39;m always having to set them on fire or vacuum them up or something. So I&#39;m always thinking about ants, and ants are kind of interesting because, more so than a lot of animals, the individuals are not really viable, and the hive (or colony or whatever) is kind of like a creature of its own (yeah, I know, I&#39;m not the first person to notice this). It even has a short term memory in the form of pheromone trails left on my floor, and I erase those memories with a paper towel and some soapy water. So the ant colony is fairly sophisticated, but each ant&#39;s behavior is relatively simple -- they are just following some simple rules and don&#39;t really comprehend why or how the colony works. They don&#39;t see the &quot;big picture&quot;.<br> <br>And that reminds me of our brains, which are built out of relatively simple neurons. Each neuron simply sums up it&#39;s inputs, and then generates an output that gets passed along to some other neurons (or something like that, I&#39;m sure it&#39;s a huge simplification, but you get the point). Certainly no individual neuron can possibly comprehend what it&#39;s doing -- it just cranks along summing up inputs and generating outputs. The magic is in the wires, the connections among the neurons.<br> <br>Individual humans aren&#39;t terribly viable animals either. They almost went extinct not that long ago (100,000 years?). However, since then we&#39;ve managed to pretty much take over the entire planet and build all kinds of amazing things like airplanes, computers, and burritos. Humans started out kind of similar to other animals (but weaker and less numerous) and then became something fundamentally different. That transition occurred because we are able to communicate and collaborate like nothing else. We can communicate though both time and space. We learn from people who died thousands of years ago on the other side of the planet. Even a survivalist hunter who goes off into wilderness alone is still relying on all the training and knowledge that was passed on before the journey began.<br> <br>So in many ways, the human society (or human superorganism) is kind of like the human brain -- the magic is in the connections. Significant advances have occurred when we upgraded the wiring that connects everyone. The inventions of spoken language, written language, and the printing press were all revolutionary because they enabled more sophisticated communication and collaboration.<br> <br>And now I can ramble on about ants and neurons and stuff, and people all of the world can read it, and digest it, and tell me I&#39;m an idiot, and make their own ideas, and pass them on to other people, and it all happens in a matter of minutes. As much hype and excitement as there has been around the Internet, I think that people may still be misunderestimating its importance. We are literally upgrading the wiring that drives human society.<br> <br>This is also why I&#39;m excited about things like FriendFeed. The flow of information and influence is rather fundamental to way our world works. In the past much of that information flow was slow and hierarchical. It had to pass through one of a relatively small number of tightly controlled networks and publishers. But suddenly, the information can come from anywhere, and go anywhere, and it doesn&#39;t need anyone&#39;s approval. If it&#39;s completely random, it won&#39;t work any better than a bunch of randomly wired neurons (which I assume isn&#39;t very good), but with the right wiring, everyone starts to get the right information for them, and maybe we can stop being so stupid. I&#39;m not yet sure what this new human architecture looks like, but that&#39;s what makes it an interesting (and extremely important) problem.<br> <br>I sometimes think of FriendFeed as a kind of &quot;distributed broadcast channel&quot;, but that&#39;s just part of picture. Better collaboration, like having other people edit my blog posts, is another part. It enables each of us to do what we do best, which improves the overall system efficiency and intelligence (and more importantly, I can avoid things that I don&#39;t like doing).<br> <br>Keeping with the brain anology, it&#39;s very likely that we can't even comprehend what&#39;s going on. I certainly don&#39;t. I&#39;m just a little neuron, summing up my inputs, and then passing the result along to you.<br> <br></p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/12/communication-and-collaboration-big.html' title='permanent link'>6:26 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/12/communication-and-collaboration-big.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=2089889173367988170' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Monday, December 29, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='771149312557492510'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/12/blog-v2.html'>blog, v2</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>I haven&#39;t posted anything here in about eight months, mostly because I&#39;ve just been very busy, but also because:<br><ul><li>Blogging is too hard</li><li>I post a lot of things over on FriendFeed, which is easier, and I&#39;m lazy (and you really should <a href="http://friendfeed.com/paul?subscribe=1">subscribe to my FriendFeed</a> if you find anything I post here at all interesting)</li> <li>I got tired of my blog posts. When I read them, there&#39;s something I don&#39;t like.</li></ul>Nevertheless, I sometimes want to share something more than a FriendFeed message or interesting link, so I&#39;m going to give it a second try.<br> <br>However, I&#39;ve decided that in the future my posts will be more rambling, and more pointless. I think part of what I don&#39;t like about the older posts is that they are sometimes arguing a point or something, but my real point (or my intention, at least) is just to share some kind of idea or thought, not convince anyone of anything. Also, I think this will be a lot easier to write because I can just type a bunch of words and they don&#39;t have to fit together in any particular way, and it&#39;s also a good excuse to not bother with any editing, so I should be able to crank these things out really fast.<br> <br>I also have this idea to outsource the writing of my blog posts to someone, ideally everyone. The idea is that I&#39;d write a bunch of stuff and then someone else (maybe wiki-style) would turn it into something coherent and readable. That would save me a lot of time and also provide plausible deniable when I write something that turns out to be especially stupid or offensive. But that&#39;s in the future. For now, it will just be a bunch of words that keep going until I get bored or distracted, and then I&#39;ll hit &quot;send&quot; :) (I&#39;m also writing these things in Gmail since the blogger interface upsets me)<br>  </p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/12/blog-v2.html' title='permanent link'>6:39 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/12/blog-v2.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=771149312557492510' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Wednesday, April 23, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='2224873685749634672'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/04/power-of-links-and-value-of-global.html'>The power of links and the value of global knowledge</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>Long, long ago, before Google, search engines evaluated and ranked web pages by considering each page in isolation, examining the size of the fonts, the contents of the meta tags, etc. In some cases, it was even possible to "hijack" another site's listings by simply cloning their HTML. Perhaps a few search engines attempted to improve on this with simple tactics such as counting the number of links to a page, but that was generally useless since it's so easy to create "fake" links in order to boost your count.<br /><br />With Pagerank, Google took a very different approach. Instead of considering each page in isolation, they examined the link structure of the entire web and computed a global evaluation of that structure. In other words, they began looking at the entire forest instead of just the individual trees. Google did other things too -- Pagerank is just one of many factors, but this general approach of evaluating information in a global context is fundamental to many of the algorithms. These algorithms made it easier for Google to spot which web sites were actually important, and which were just pretenders. Of course Google isn't perfect, and people can still manipulate rankings to some extent, but it was substantially better than the old way, and good enough to form the foundation of what is now a $174 billion dollar company.<br /><br />Last week I wrote about <a href="http://paulbuchheit.blogspot.com/2008/04/facebook-knows-who-you-are-and-thats.html">Facebook gathering similar information about people</a>. By collecting information about people and the links between them, they can start to get a global view of the human "forest". Unfortunately, based on many of the responses, that post wasn't very well written. A lot of people focused on how annoying Facebook applications are (true), how search results limited to your friends would be useless (also true), or other things completely unrelated to my point. A few people mentioned that Facebook hasn't done anything useful with this data, which is actually a good point, but I think that has more to do with Facebook and the newness of the data than it does with the value of the data. After all, the web was around for many years before Google came along and started profitably mining the link structure.<br /><br />Will Facebook ever do anything useful with the human link data? I have no idea, and it's not particularly important to me. However, I'm confident that SOMEONE will begin mining this data, and that it could ultimately be more valuable than the link data from the web. Facebook is a convenient example because they happen to have a head start on collecting the data, but others might be the first to actually profit from it. Google, in particular, is much better at data mining and also has quite a bit of human link data (from Gmail and Orkut). Microsoft+Yahoo will also have a nice data set, though I doubt that they will know what to do with it. Of course none of this data is perfectly clean and noise-free, but real data never is -- the web certainly isn't.</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/04/power-of-links-and-value-of-global.html' title='permanent link'>1:30 AM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/04/power-of-links-and-value-of-global.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=2224873685749634672' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Thursday, April 17, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='2336994884472724062'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/04/facebook-knows-who-you-are-and-thats.html'>Facebook knows who you are, and that's worth more than you think</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>It's very fashionable to declare that Facebook is an over-hyped fad and will never make any real money, certainly not enough to justify its insane $15 billion valuation. At first glance, it's easy to understand why some people might think it's a toy -- most of the activity there seems to involve biting, poking, and joining groups with funny names.<br /><br />However, I think that assessment misses out on something very interesting: Facebook is capturing everyone's identity and relationships. Of course there's some noise caused by random friending, but by examining the larger graph as well as other details such as location, affiliations, interactions, and of course explicitly entered relationship details ("how do you know Paul?"), they can get a pretty good idea of which people are actual friends and acquaintances.<br /><br />The lack of reliable identity information has always been an issue on the web. It's the reason why we don't have a useful directory of email addresses -- everyone in the directory would get bombarded by spam or other unwanted messages, and even if it did exist, how would you know which of the thousands of Adam Smiths is the one that you are looking for? Facebook has already solved this problem for a large fraction of people. It's easy to search for a name and then pick out the right person based on their picture, location, or friends. I get a lot of messages on Facebook, but unlike email, I have yet to receive any spam. That's pretty remarkable.<br /><br />Perhaps a people directory doesn't seem terribly valuable, but if you can't imagine how to make money from knowing everyone's identity and trust networks, then you aren't being very imaginative. Spam and fraud are two of the biggest problems on the internet, and they are very difficult to stop because it's so easy to create new identities, and we have no good way of differentiating between real identities and fake ones. Even in "real" life, people are able to skip town-to-town, defrauding people again and again because to the people in the new town, they have a new and unknown identity.<br /><br />One of the best examples of this problem on the internet is eBay. If you try to buy or sell something on eBay (especially computers or electronics, apparently), there is a very good chance that someone will try to rip you off -- just search Google for <a href="http://www.google.com/search?q=ebay+scammers">ebay scammers</a> and you will find pages such as "How scammers run rings round eBay" and "eBay Forums: Today's Scams In Progress". Ebay has had a relatively solid lock on the auction market due to network effects, but with billions of dollars in profits, a $42 billion market cap, and 10 years of not innovating, I'm willing to bet that won't last. With reliable identity information, most of these fraud schemes would become impractical, which would obviously be a real advantage for an eBay competitor.<br /><br />What else is highly profitable on the internet? Search. I doubt that anyone will ever beat Google at Google-style search, certainly not Microsoft or Yahoo, even if they do tie their horses together. The only way anyone will create something significantly better than today's Google is if they add a new and important ingredient to the mix. Many people have suggested that demographic information, or perhaps knowing what your friends have searched for will help, but I doubt it. What could work is actual, direct, human involvement by the users. In fact, it's already helping in a very limited form -- Wikipedia pages are written and edited by random people on the internet and they frequently occupy the top spots on Google (and I always click on them). Of course the problem with letting random users edit or reorder the search results is that you will quickly be overwhelmed by spam and fraud. But what if you knew who the users were and which ones you could trust?<br /><br />Those are just the first few things that come to mind -- the uses of identity information are endless. Of course there's no guarantee that Facebook will actually realize any of this potential -- there were many search engines before Google, and they all fumbled the opportunity they had, but it's important to at least understand the <i>potential</i> for big things.<br /><br /><b>Update:</b> This post was supposed to be about data more so than Facebook (Facebook just happens to have the data). See <a href="http://paulbuchheit.blogspot.com/2008/04/power-of-links-and-value-of-global.html">this post</a> for a (hopefully) better explanation.</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/04/facebook-knows-who-you-are-and-thats.html' title='permanent link'>2:20 AM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/04/facebook-knows-who-you-are-and-thats.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=2336994884472724062' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Sunday, March 30, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='4685515534486634251'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/03/ideas-vs-judgment-and-execution_9197.html'>Ideas vs Judgment and Execution: Climbing the Mountain</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>How much is an idea worth? Many normal people assume that ideas are valuable, and that if only they could think of one, they might be able to sell it for millions of dollars, like the Pet Rock. On the other hand, many engineers, VCs, and successful entrepreneurs claim that ideas are worthless. Paul Graham provides a sort of <a href="http://www.paulgraham.com/ideas.html">"proof" that ideas are worthless</a>:<br /><blockquote><br />Startup ideas are not million dollar ideas, and here's an experiment you can try to prove it: just try to sell one. Nothing evolves faster than markets. The fact that there's no market for startup ideas suggests there's no demand. Which means, in the narrow sense of the word, that startup ideas are worthless.</blockquote><br />People in the "ideas are worthless" camp usually claim that it's all about execution -- they have plenty of great ideas that just need great teams to execute on them.<br /><br />I have ideas all of the time, many more than I have time for, and so I tend towards the "ideas are worthless" camp. However, there's a nagging inconsistency -- something isn't quite right.<br /><br />Quoting <a href="http://paulbuchheit.blogspot.com/2008/02/most-import-thing-to-understand-about.html">yet again</a> from Marc Andreessen's "<a href="http://blog.pmarca.com/2007/06/the-pmarca-gu-2.html">Guide to Startups, part 4: The only thing that matters</a>" <blockquote><br />I'll assert that market is the most important factor in a startup's success or failure.<br />...<br />The product doesn't need to be great; it just has to basically work. And, the market doesn't care how good the team is, as long as the team can produce that viable product.<br />...<br />Conversely, in a terrible market, you can have the best product in the world and an absolutely killer team, and it doesn't matter -- you're going to fail.<br /></blockquote><br /><br />In other words, you just need to build the right product. A mediocre team building the right product will succeed and a brilliant team building the wrong product will fail.<br /><br />Isn't that a little bit like saying that having the right idea DOES matter? And if ideas are so plentiful, then why do we see great teams executing perfectly on bad ideas?<br /><br />I've thought about this for a bit and realized that both camps ("ideas are valuable" and "ideas are worthless") are wrong, at least when stated so simply.<br /><br />Imagine that products are mountains. To build a product, you will need to climb that mountain. Some mountains have a big pot of gold at the top, and some do not. In order to make money, you will need to pick the right mountain and then successfully climb to the top and gather up the gold. You can fail by choosing a mountain that has little or no gold at the top, or by dying on the way up.<br /><br />Taking this metaphor a little further, there are also multiple paths up the mountain. According to Wikipedia, Mount Everest has fifteen recognized routes to the top. Some routes are easier than others.<br /><br />Successfully executing a trip to the top of the mountain requires a certain level of technical ability -- how much will depend on the mountain and route. It also requires good judgment in order to choose the right route, or to change course when you realize that the current path isn't working out.<br /><br />Judgment isn't talked about as much as execution, but it's obviously very important. A technically brilliant team, upon encountering a sheer cliff, may excitedly think to themselves, "this is the perfect opportunity to use Erlang!" (or some other fancy tech  -- Erlang is just a funny example) A team with better judgment would notice that there's an easier route that goes around the other side.<br /><br />Judgment also plays a critical role in choosing which mountain to climb. Our landscape of product-mountains has millions of different mountains, many of which have never been climbed. Other mountains have been attempted in the past, but the team froze on the way up, or there was no gold when they got to the top (apparently the gold flows intermittently in this analogy).<br /><br />There are also people wandering around in the flat lands near the mountains. Many of these people have ideas about which mountains have gold at the top, and some of them have even drawn crude maps showing what they believe to be an easy route to the top. Inevitably, they try to sell their ideas and maps to the mountain climbers, but the climbers just brush them off and say that their ideas and plans are worthless.<br /><br />Eventually, a team of climbers will discover a huge cache of gold on one of the mountains. Naturally, the people who were hanging around at the base trying to sell their ideas and plans will say, "I had that idea first! They stole my idea! I knew there was gold at the top of the mountain!"<br /><br />And it's true that they had the idea, as did many other people. Ideas are plentiful. The problem is that most ideas are bad -- either there's no gold at the top of the mountain, or the ascent is too difficult with today's technology. What's valuable is the judgment to know which mountains have the gold, and the team that can get to it.<br /><br />So are ideas worthless? Not quite. If a skilled climber who has successfully chosen the right mountains in the past thinks he knows the location of another gold-rich mountain, people will listen. The idea has value because it comes from someone who has a history of being right.<br /><br />If the exact same idea were presented by a random person with no experience and no ability to execute, it would probably be ignored -- there's just not enough evidence that it's a good idea. If that person truly believes in their idea, they will have to prove it on their own. (The beauty of our system is that they often can, even if everyone else thinks it's a bad idea)<br /><br />If someone with a history of being right also has a capable team of climbers who have demonstrated the technical skill and judgment to climb other mountains, then that is very valuable, and they will have no trouble getting their idea funded.<br /><br />Summary:<br /><span style="font-weight:bold;">Idea * Judgment * Ability * Determination * Luck = $$$</span></p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/03/ideas-vs-judgment-and-execution_9197.html' title='permanent link'>8:15 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/03/ideas-vs-judgment-and-execution_9197.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=4685515534486634251' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Thursday, March 27, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='1049561633638137548'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/03/friendfeed-from-command-line.html'>FriendFeed from the command line</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://friendfeed.s3.amazonaws.com/e965e539aa2a8c69dde29eef5c4830e8c1fe5f4e"><img style="cursor:pointer; cursor:hand;width: 525px;" src="http://friendfeed.s3.amazonaws.com/e965e539aa2a8c69dde29eef5c4830e8c1fe5f4e" border="0" alt="" /></a><br /><br />Sometimes, it's faster and easier to just use the command line. Thanks to the new <a href="http://code.google.com/p/friendfeed-api/wiki/ApiDocumentation">FriendFeed API</a>, I was able write a little script that connects <a href="http://friendfeed.com/e/85806009-847b-4ee5-8c4a-27adc95d477f">my command line</a> to <a href="http://friendfeed.com/paul">my FriendFeed</a>.<br /><br />This probably would have been easier to write in Python, but bash is so awkward that it makes for a somewhat more interesting challenge. (most of this code is just dealing with image files -- the real work is done by curl)<br /><br />Here you go:<br /><pre style="background:black;color:white;line-height:1em;margin:0px;padding:3px">#!/bin/bash<br /># Replace with your nickname:remote-key<br /># Go to http://friendfeed.com/account/api to get your remote key<br />USER="paulapitest:buggy696hoist"<br /><br />function usage {<br />    echo "Usage: $0 [-t title] [-l link] [-u nickname:remotekey] [images ...]"<br />    exit 1<br />}<br /><br />MAXSIZE=""<br />while getopts m:u:t:l: opt ; do<br />    case "$opt" in<br />        t)  TITLE="$OPTARG";;<br />        l)  LINK="$OPTARG";;<br />        u)  USER="$OPTARG";;<br />        m)  MAXSIZE="$OPTARG";;<br />        \?) usage;;<br />    esac<br />done<br />shift $[OPTIND - 1]<br /><br />TITLE="${TITLE:-$LINK}"<br />TITLE="${TITLE:-$1}"<br /><br />[ "$TITLE" = "" ] &amp;&amp; usage<br /><br />ARGS=("-F" "title=$TITLE" "-F" "link=$LINK" "-u" "$USER")<br />FILES=("$@")<br /><br />for F in "${FILES[@]}" ; do<br />    if [ "$MAXSIZE" != "" -a -x /usr/bin/sips ] ; then<br />        T=`mktemp /tmp/ffshare.XXXXXX`<br />        sips --resampleHeightWidthMax "$MAXSIZE" --out "$T" "$F" 2>/dev/null<br />        F="$T;filename=$F"<br />    fi<br />    N="${#ARGS[@]}"<br />    ARGS[N]="-F"<br />    ARGS[N+1]="img$RANDOM=@$F"<br />done<br /><br />CODE=`curl -o /dev/null -w "%{http_code}" "${ARGS[@]}" http://friendfeed.com/api/share`<br />if [ "$CODE" == "200" ] ; then<br />    echo "Shared on http://friendfeed.com/`echo "$USER" | sed -e 's/:.*//'`"<br />else<br />    echo "Failed: HTTP response $CODE"<br />fi<br /></pre></p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/03/friendfeed-from-command-line.html' title='permanent link'>2:47 AM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/03/friendfeed-from-command-line.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=1049561633638137548' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Monday, March 17, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='1608129528513693032'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/03/is-fragmentation-bad.html'>Is fragmentation bad?</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>Imagine that you've just finished watching a movie and are in the mood to talk about it. How are you going to do that? You could chat with random, semi-anonymous people in the movie theater lobby (assume you went to a theater). You could find a community of people who are big fans of the director or the book that the movie was based on. Or, if you saw the movie with friends or family, maybe you'll discuss it with them.<br /><br />Which of these options you choose will probably depend on your situation. Sometimes it's fun to hear what "random" people think. If the movie is a little more niche and you're somewhat of a connoisseur, you may not care what random people, or even your friends, think. On the other hand, going to movies is often more about shared experience than it is about the movie itself. We enjoy spending time with our friends and the movie is just something interesting to discuss.<br /><br />Ultimately, a single movie may spawn millions of separate discussions among millions of different people, all in different situations and contexts.<br /><br />However, there's a question that no one is asking: <span style="font-weight:bold;">Isn't all that fragmentation bad? Instead of having millions of separate discussions, shouldn't we have a single, unified discussion, preferably under the control and ownership of the movie studio?</span><br /><br />No?<br /><br />I enjoy our fragmented movie discussions, and I suspect that I would hate the single, unified, shouting match that would occur if we tried to unify all of those separate discussions. This issue of unified discussion may seem a little silly, but I keep seeing it repeated in the context of blogs and other online content.<br /><br />People sometimes complain that specialized communities such as <a href="http://news.ycombinator.com/">news.ycombinator.com</a> are taking the conversation away from the sites that they link to, but I go to news.yc in large part because it has an intelligent and well behaved community. That community is kind of niche -- they mostly talk about programming and startups -- but I'm interested in those same things, so I like it.<br /><br />On the other hand, I occasionally read the <a href="http://xkcd.com/202/">comments on YouTube</a>, but I would never comment there myself. It's too random and belligerent for me.<br /><br />Most recently, this issue of fragmentation has been brought up a lot when debating FriendFeed. One of things that people really love about FriendFeed are the comments -- it's the only place on the web where I can easily share and discuss things with my actual friends (to see what this looks like, view the <a href="http://friendfeed.com/paul">things I've shared</a> or the things that <a href="http://friendfeed.com/paul/discussion">I've liked or commented on</a>).<br /><br />Although comments are one of our most popular features, they are also our most controversial feature. If you believe that there should only be a single, unified discussion, then the extra fragmentation caused by FriendFeed will seem like a step in the wrong direction. In fact, not only is there a separate discussion on FriendFeed, there may be hundreds of separate discussions within FriendFeed on the very same topic or link (because different people are sharing the link, and different people have different friend groups).<br /><br />I, for one, enjoy the fragmentation. It's important to understand that FriendFeed isn't trying to replace the specialized communities on places such as news.yc, or the screaming hordes on YouTube. <span style="font-weight:bold;">We're creating a third option: discussion with friends</span>. It may not be for everyone, and that's fine, but many people really like it, including people who would never participate in broader forums such as TechCrunch or YouTube.</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/03/is-fragmentation-bad.html' title='permanent link'>1:05 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/03/is-fragmentation-bad.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=1608129528513693032' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Monday, February 25, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='4069109779426090555'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/02/good-news-everyone.html'>Good news, everyone!</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p><a href="http://blog.friendfeed.com/2008/02/friendfeed-is-officially-launching.html">FriendFeed is officially launching!</a> (and also announcing our funding)<br /><br />See <a href="http://www.louisgray.com/live/2008/02/friendfeed-opens-up-raises-5-million-in.html">Louis Gray</a>, <a href="http://venturebeat.com/2008/02/25/friendfeed-the-best-software-for-conversations-raises-round-and-launches-publicly/">VentureBeat</a>  ("Friendfeed, the best software for conversations"), and <a href="http://www.techcrunch.com/2008/02/25/friendfeed-raises-5-million-now-open-to-everyone/">TechCrunch</a> for more detailed reviews.</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/02/good-news-everyone.html' title='permanent link'>10:08 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/02/good-news-everyone.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=4069109779426090555' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Sunday, February 17, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='4374539811113132758'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/02/most-import-thing-to-understand-about.html'>The most important thing to understand about new products and startups</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>First, a quote from Marc Andreessen's "<a href="http://blog.pmarca.com/2007/06/the-pmarca-gu-2.html">Guide to Startups, part 4: The only thing that matters</a>"<br /><blockquote>If you ask entrepreneurs or VCs which of team, product, or market is most important, many will say team.<br />...<br />Personally, I'll take the third position -- I'll assert that market is the most important factor in a startup's success or failure.<br /><br />Why?<br /><br />In a great market -- a market with lots of real potential customers -- the market pulls product out of the startup.<br /><br />The market needs to be fulfilled and the market will be fulfilled, by the first viable product that comes along.<br /><br />The product doesn't need to be great; it just has to basically work. And, the market doesn't care how good the team is, as long as the team can produce that viable product.<br />...<br />Conversely, in a terrible market, you can have the best product in the world and an absolutely killer team, and it doesn't matter -- you're going to fail.</blockquote><br /><br />Mark's blog post did not immediately resonate with me, because his terms are somewhat different from the way I think. After all, how great is your product if nobody wants it? How great is your team if they persist in building something that nobody wants?<br /><br />However, his main point has stayed in the back of my mind since then, and I'm continually reminded of how important it is, and how often I see people who clearly don't get it.<br /><br />In my mind, there's really two points. One: <span style="font-weight:bold;">You can take the smartest, most experienced, most connected, most brilliant people in the world and have them build the most stunningly designed and technically advanced product in the world, but if people don't want it, then you will fail.</span> This is roughly what happened with the Segway, for example.<br /><br />Perhaps that seems a little discouraging. After all, if really smart people with all the right resources can fail, then what hope is there for the rest of us? Perhaps success is random, and maybe startups are more like the lottery than we'd like to admit.<br /><br />I don't believe that's true though. There is an optimistic way of understanding my first point, and that's my second point: <span style="font-weight:bold;">Even if you aren't the smartest person around, and your product is kind of ugly and broken, you can still be very successful, if you just build the right product.</span> YouTube and MySpace are both fine examples of this.<br /><br />But if your team is so great, why aren't they building the right product? Simply put, they have the wrong attitude. Firstly, they overestimate the importance of their own skills. Engineers think that success is all about fancy technology and complex engineering (hello Google). Designers think that success is all about beautiful design. MBAs think that success is all about knowing the right people, or spreadsheets, or something. If you have especially smart or successful people, then this problem could be even worse, because then the team is also likely to be arrogant and overconfident, which makes them less likely to question these assumptions or the value of their own skills.<br /><br />It's easy to find examples of this wrong attitude. When Google acquired YouTube, many people inside the company were flabbergasted, "But they have no technology!?" They didn't understand that you only need <u>enough</u> technology to make the product work. Any more and you probably have the wrong priorities. I regularly see similar complaints about Facebook, MySpace, and a lot of other popular sites. Similarly, people will often complain that MySpace or even Google has "no design" or "bad design". Again, they have enough design (or the right design) to work for their users. <br /><br />So what's the right attitude? <span style="font-weight:bold;">Humility.</span> It doesn't matter how smart and successful and qualified you are, you simply don't know what you're doing. The good news is that nobody else does either, though some are foolish enough to think that they do (and that's why you can beat them).<br /><br />What is the humble approach to product design? <span style="font-weight:bold;">Pay attention.</span> Notice which things are working and which aren't. Experiment and iterate. Question your assumptions. Remember that you are wrong about a lot of things. Watch for the signals. Lose your technical and design snobbery. Whatever works, works.<br /><br />MySpace is a great example of this. I'm pretty sure that their custom profile page layouts were an accident. They didn't know enough to properly escape the text that people put on their profiles, and that allowed their users to start including arbitrary html and css in their pages. This is a common bug, and most people would have fixed the bug and that would have been the end of it (really great engineers wouldn't have had the bug in the first place). But they did something smarter. They noticed that the feature was popular and found a way to preserve it. The result is mostly ugly, but it's extremely popular.<br /><br />There are many <a href="http://www.pocketgadget.org/2008/01/14/serendipity-10-accidental-inventions">other accidental inventions</a> besides MySpace, but it's important to understand that "accidental" isn't the same as "random". There are clues all around us, we just need to watch more closely.<br /><br />For web based products at least, there's another very powerful technique: release early and iterate. The sooner you can start testing your ideas, the sooner you can start fixing them.<br /><br />I wrote the first version of Gmail in one day. It was not very impressive. All I did was stuff my own email into the Google Groups (Usenet) indexing engine. I sent it out to a few people for feedback, and they said that it was somewhat useful, but it would be better if it searched over their email instead of mine. That was version two. After I released that people started wanting the ability to respond to email as well. That was version three. That process went on for a couple of years inside of Google before we released to the world.<br /><br />Startups don't have hundreds of internal users, so it's important to release to the world much sooner. When <a href="http://friendfeed.com/">FriendFeed</a> was semi-released (private beta) in October, the product was only about two months old (and 99.9% written by two people, <a href="http://friendfeed.com/bret">Bret</a> and <a href="http://friendfeed.com/jim">Jim</a>). We've made a lot of improvements since then, and the product that we have today is much better than what we would have built had we not launched. The reason? We have users, and we listen to them, and we see which things work and which don't.<br /><br />Find the gradient, then follow it.</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/02/most-import-thing-to-understand-about.html' title='permanent link'>3:22 AM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/02/most-import-thing-to-understand-about.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=4374539811113132758' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<h2 class='date-header'>Sunday, January 27, 2008</h2>
+<div class='post uncustomized-post-template'>
+<a name='8916941877814852130'></a>
+<h3 class='post-title'>
+<a href='http://paulbuchheit.blogspot.com/2008/01/ultra-immersive-long-form-video-games.html'>Ultra-immersive, long-form video games from the past or future</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body'>
+<p>As our technology and understanding of nature improves, we are living longer, and many predict that this trend will continue to the point that humans will become nearly immortal. When confronted with the possibility of living for hundreds, thousands, or even millions of years, most people express several concerns: "Will I still be able to retire at age 65?", and "Won't that get boring after a while?"<br /><br />Fortunately, technology is also improving it other areas (and not just more deadly weapons). Video games, for example, are getting quite sophisticated. As the graphics and other interfaces improve, video games become increasingly immersive and involved, and we begin to feel as though we are really inside the game. As this trend continues, will we get to the point that the games feel so real that we become completely immersed and forget about the outside reality?<br /><br />So what will million-year old people do to manage their boredom? Perhaps they will play long, complicated, multi-player, fully-immersive video games. If your regular life lasted millions of years, occasionally spending a hundred years playing some fancy game might seem reasonable. Perhaps you would play-out your character's entire life span, from birth to death, in one "sitting". In order to really feel the experience and keep the game authentic, you would of course make it so that everyone playing would forget that it was just a game (though maybe some people would try to <a href="http://xkcd.com/267/">cheat</a>).<br /><br />The obvious question: Is that the future, or the past?<br /><br />Once we eliminate the certainty of our perceived reality, then how can we justify our certainty of anything else? Accepting true reality, whatever it may be, requires letting go of everything specific.</p>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'>
+<span class='post-author'>
+Posted by
+Paul Buchheit
+</span>
+<span class='post-timestamp'>
+at
+<a class='timestamp-link' href='http://paulbuchheit.blogspot.com/2008/01/ultra-immersive-long-form-video-games.html' title='permanent link'>7:27 PM</a>
+</span>
+<span class='post-comment-link'>
+<a class='comment-link commentslink' href='http://paulbuchheit.blogspot.com/2008/01/ultra-immersive-long-form-video-games.html#disqus_thread'>View Comments</a>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1550728936'>
+<a href='http://www.blogger.com/post-edit.g?blogID=33042626&postID=8916941877814852130' title='Edit Post'>
+<span class='quick-edit-icon'>&#160;</span>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-3'></p>
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://paulbuchheit.blogspot.com/search?updated-max=2008-01-27T19%3A27%3A00-08%3A00&max-results=15' id='Blog1_blog-pager-older-link' title='Older Posts'>Older Posts</a>
+</span>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://paulbuchheit.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Posts (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+<div id='sidebar-wrapper'>
+<div class='sidebar section' id='sidebar'><div class='widget HTML' id='HTML2'>
+<div class='widget-content'>
+<script src="http://chan.friendfeed.com:8888/embed/badge/paul" type="text/javascript"></script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=33042626&widgetType=HTML&widgetId=HTML2&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Profile' id='Profile1'>
+<h2>About Me</h2>
+<div class='widget-content'>
+<dl class='profile-datablock'>
+<dt class='profile-data'>Paul Buchheit</dt>
+<dd class='profile-textblock'><img height='133' src='http://bp0.blogger.com/_4sbxCBha3lY/RfoW9T8Tm3I/AAAAAAAAAZ8/zGM4aLX089M/s400/me2-thumb.jpg' style='margin:5px' width='200'/><br/><a href=http://en.wikipedia.org/wiki/Paul_Buchheit>http://en.wikipedia.org/wiki/Paul_Buchheit</a></dd><br/>
+<a href='http://paulbuchheit.blogspot.com/2007/03/are-you-my-audience.html'>Are you my audience?</a>
+</dl>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=33042626&widgetType=Profile&widgetId=Profile1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+<script src="http://chan.friendfeed.com:8888/embed/widget/paul?v=3&amp;hide_logo=1" type="text/javascript"></script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=33042626&widgetType=HTML&widgetId=HTML1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul>
+<li class='archivedate expanded'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=close&amp;toggle=YEARLY-1230796800000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy toggle-open'>&#9660; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/search?updated-min=2009-01-01T00%3A00%3A00-08%3A00&updated-max=2010-01-01T00%3A00%3A00-08%3A00&max-results=5'>2009</a>
+<span class='post-count' dir='ltr'>(5)</span>
+<ul>
+<li class='archivedate expanded'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=close&amp;toggle=MONTHLY-1238569200000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy toggle-open'>&#9660; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2009_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2009/04/make-your-site-faster-and-cheaper-to.html'>Make your site faster and cheaper to operate in on...</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1230796800000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2009_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2009/01/communicating-with-code.html'>Communicating with code</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2009/01/if-youre-kind-of-person-who-likes-to.html'>If you&#39;re the kind of person who likes to vote...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2009/01/overnight-success-takes-long-time.html'>Overnight success takes a long time</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2009/01/question-is-wrong.html'>The question is wrong</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1199174400000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/search?updated-min=2008-01-01T00%3A00%3A00-08%3A00&updated-max=2009-01-01T00%3A00%3A00-08%3A00&max-results=12'>2008</a>
+<span class='post-count' dir='ltr'>(12)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1228118400000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2008_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2008/12/communication-and-collaboration-big.html'>communication and collaboration - the big upgrade</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2008/12/blog-v2.html'>blog, v2</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1207033200000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2008_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2008/04/power-of-links-and-value-of-global.html'>The power of links and the value of global knowled...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2008/04/facebook-knows-who-you-are-and-thats.html'>Facebook knows who you are, and that&#39;s worth more ...</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1204358400000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2008_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2008/03/ideas-vs-judgment-and-execution_9197.html'>Ideas vs Judgment and Execution: Climbing the Moun...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2008/03/friendfeed-from-command-line.html'>FriendFeed from the command line</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2008/03/is-fragmentation-bad.html'>Is fragmentation bad?</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1201852800000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2008_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2008/02/good-news-everyone.html'>Good news, everyone!</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2008/02/most-import-thing-to-understand-about.html'>The most important thing to understand about new p...</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1199174400000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2008_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(3)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2008/01/ultra-immersive-long-form-video-games.html'>Ultra-immersive, long-form video games from the pa...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2008/01/building-great-team.html'>Building a great team</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2008/01/should-gmail-yahoo-and-hotmail-block.html'>Should Gmail, Yahoo, and Hotmail block Facebook?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=YEARLY-1167638400000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/search?updated-min=2007-01-01T00%3A00%3A00-08%3A00&updated-max=2008-01-01T00%3A00%3A00-08%3A00&max-results=49'>2007</a>
+<span class='post-count' dir='ltr'>(49)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1196496000000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/12/twas-night-before-festivus.html'>Twas the night before Festivus...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/12/brilliantly-wrong.html'>Brilliantly wrong</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/12/is-there-more-to-life-than-money.html'>Is there more to life than money?</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/12/theres-no-such-thing-as-social-network.html'>There&#39;s no such thing as a &quot;social network&quot;</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1193900400000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(2)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/11/we-all-have-tunnel-vision.html'>We all have tunnel vision</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/11/back-to-blogging-again-i-hope_15.html'>Back to blogging again, I hope</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1191222000000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/10/next-big-adventure.html'>The next big adventure</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1188630000000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/09/quick-read-this-if-you-ever-store.html'>Quick: Read this if you ever store password data</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1185951600000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/08/16gb-iphone-slr-includes-high-quality.html'>16GB iPhone &quot;SLR&quot; includes high-quality 8MP camera...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/08/reality-page-191.html'>Reality, page 191</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/08/what-does-it-mean-to-own-right-was.html'>What does it mean to own a &quot;right&quot;? Was Gandhi a t...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/08/first-thing-that-you-need-to-understand.html'>The first thing that you need to understand about ...</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1180681200000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(15)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/quick-all-actions-should-have-undo.html'>Quick: All actions should have &#39;undo&#39;</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/quick-maybe-you-can-hack-code.html'>Quick: Maybe you can hack computers</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/quick-job-culture.html'>Quick: Job culture</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/three-types-of-ideas.html'>Three types of ideas - bad ones are often the best...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/not-having-health-insurance-is-really.html'>Not getting health insurance is a really bad idea</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/quick-unintended-consequences.html'>Quick: Unintended consequences</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/quick-big-screen-development.html'>Quick: Big screen development</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/quick-dbe.html'>Quick: DBE</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/dogmatic-programmer-when-software.html'>The dogmatic programmer - when software becomes re...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/quick-vibe.html'>Quick: Vibe</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/great-story-from-steve-yegge.html'>Quick: Wolves</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/email-blackmail-is-unnecessary.html'>Email blackmail is unnecessary</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/optimizing-everything-some-details.html'>Optimizing everything: some details matter a lot, ...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/java-is-faster-than-c.html'>Java running faster than C</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/06/wasting-time-on-things-that-really-dont.html'>Wasting time on things that really don&#39;t matter</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1178002800000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(4)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/05/amazingly-bad-apis.html'>Amazingly bad APIs</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/05/flash-silverlight-and-javafx-all-look.html'>Flash, Silverlight, and JavaFX all look nice, but ...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/05/when-people-dont-know-how-to-change.html'>When people don&#39;t know how to change something, th...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/05/beliefs-intelligence-and-failure.html'>Beliefs, intelligence, and failure</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1175410800000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(10)</span>
+<ul class='posts'>
+<li><a href='http://paulbuchheit.blogspot.com/2007/04/and-you-thought-all-good-domain-names.html'>And you thought all the good domain names were tak...</a></li>
+<li><a href='http://paulbuchheit.blogspot.com/2007/04/whose-reality-are-you-living-in-whose.html'>Whose reality are you living in? Whose reality wou...</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='http://paulbuchheit.blogspot.com/?widgetType=BlogArchive&widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1172736000000&amp;toggleopen=MONTHLY-1238569200000'>
+<span class='zippy'>&#9658; </span>
+</a>
+<a class='post-count-link' href='http://paulbuchheit.blogspot.com/2007_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='http://www.blogger.com/rearrange?blogID=33042626&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class='clear'>&#160;</div>
+</div>
+<!-- end content-wrapper -->
+<div id='footer-wrapper'>
+<div class='footer section' id='footer'></div>
+</div>
+</div></div>
+<!-- end outer-wrapper -->
+<!-- +disqus -->
+<script type='text/javascript'>
+		(function() {
+			links = document.getElementsByTagName('a');
+			query = '?';
+			for(var i = 0; i < links.length; i++) {
+				if(links[i].href.indexOf('#disqus_thread') >= 0) {
+					query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+				}
+			}
+			document.write('<script type="text/javascript" src="http://disqus.com/forums/paulbuchheit/get_num_replies.js' + query + '"></' + 'script>');
+		}());
+	</script>
+<!-- -disqus -->
+<script type="text/javascript" src="http://www.blogger.com/static/v1/widgets/4279243607-widgets.js"></script>
+<script type='text/javascript'>
+_WidgetManager._Init('http://www.blogger.com/rearrange?blogID=33042626', 'http://paulbuchheit.blogspot.com/','33042626');
+_WidgetManager._SetPageActionUrl('http://www.blogger.com/display?blogID=33042626', 'yAa6nFkGTFJzKrJp2rB9MpvNVlo:1241146980630');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'title': 'Paul Buchheit', 'pageType': 'index', 'url': 'http://paulbuchheit.blogspot.com/', 'homepageUrl': 'http://paulbuchheit.blogspot.com/', 'searchLabel': '', 'searchQuery': '', 'pageName': '', 'pageTitle': 'Paul Buchheit', 'encoding': 'UTF-8', 'locale': 'en-US', 'isPrivate': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Paul Buchheit - Atom\42 href\75\42http://paulbuchheit.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Paul Buchheit - RSS\42 href\75\42http://paulbuchheit.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Paul Buchheit - Atom\42 href\75\42http://www.blogger.com/feeds/33042626/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\07533042626\42 /\076', 'meTag': '', 'openIdOpTag': '\74link rel\75\42openid.server\42 href\75\42http://www.blogger.com/openid-server.g\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window;function d(b){this.t\75{};this.tick\75function(c,h,e){var i\75e?e:(new Date).getTime();this.t[c]\75[i,h]};this.tick(\42start\42,null,b)}var f\75new d;a.jstiming\75{Timer:d,load:f};try{a.jstiming.pt\75a.external.pageT}catch(g){};function j(b){var c\0750;if(b.offsetParent){do c+\75b.offsetTop;while(b\75b.offsetParent)}return c}a.tickAboveFold\75function(b){j(b)\74\075750\46\46a.jstiming.load.tick(\42aft\42)};var k\75false;function l(){if(!k){k\75true;a.jstiming.load.tick(\42firstScrollTime\42)}}a.addEventListener?a.addEventListener(\42scroll\42,l,false):a.attachEvent(\42onscroll\42,l); })();\74/script\076'}}]);
+_WidgetManager._SetSystemMarkup({'layout': {'varName': '', 'template': '\74div class\75\47widget-wrap1\47\76\n\74div class\75\47widget-wrap2\47\76\n\74div class\75\47widget-wrap3\47\76\n\74div class\75\47widget-content\47\76\n\74div class\75\47layout-title\47\76\74data:layout-title\76\74/data:layout-title\76\74/div\76\n\74a class\75\47editlink\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 target\75\47chooseWidget\47\76\74data:edit-link\76\74/data:edit-link\76\74/a\76\n\74/div\76\n\74/div\76\n\74/div\76\n\74/div\076'}, 'quickedit': {'varName': '', 'template': '\74div class\75\47clear\47\76\74/div\76\n\74span class\75\47widget-item-control\47\76\n\74span class\75\47item-control blog-admin\47\76\n\74a class\75\47quickedit\47 expr:href\75\47data:widget.quickEditUrl\47 expr:onclick\75\47\46quot;return _WidgetManager._PopupConfig(document.getElementById(\\\46quot;\46quot; +       data:widget.instanceId + \46quot;\\\46quot;));\46quot;\47 expr:target\75\47\46quot;config\46quot; + data:widget.instanceId\47 expr:title\75\47data:edit-link\47\76\n\74img alt\75\47\47 height\75\04718\47 src\75\47http://img1.blogblog.com/img/icon18_wrench_allbkg.png\47 width\75\04718\47/\76\n\74/a\76\n\74/span\76\n\74/span\76\n\74div class\75\47clear\47\76\74/div\076'}, 'all-head-content': {'varName': 'page', 'template': '\74data:blog.latencyHeadScript\76\74/data:blog.latencyHeadScript\76\n\74meta expr:content\75\47\46quot;text/html; charset\75\46quot; + data:page.encoding\47 http-equiv\75\47Content-Type\47/\76\n\74meta content\75\47true\47 name\75\47MSSmartTagsPreventParsing\47/\76\n\74meta content\75\47blogger\47 name\75\47generator\47/\76\n\74link href\75\47http://www.blogger.com/favicon.ico\47 rel\75\47icon\47 type\75\47image/vnd.microsoft.icon\47/\76\n\74data:blog.feedLinks\76\74/data:blog.feedLinks\76\n\74data:blog.meTag\76\74/data:blog.meTag\76\n\74data:blog.openIdOpTag\76\74/data:blog.openIdOpTag\76\n\74b:if cond\75\47data:page.isPrivate\47\76\n\74meta content\75\47NOINDEX,NOFOLLOW\47 name\75\47robots\47/\76\n\74/b:if\076'}});
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74b:if cond\75\47data:team \75\75 \46quot;true\46quot;\47\76\n\74ul\76\n\74b:loop values\75\47data:authors\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.userUrl\47\76\74data:i.display-name\76\74/data:i.display-name\76\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\76\n\74b:else\76\74/b:else\76\n\74b:if cond\75\47data:photo.url !\75 \46quot;\46quot;\47\76\n\74a expr:href\75\47data:userUrl\47\76\74img class\75\47profile-img\47 expr:alt\75\47data:photo.alt\47 expr:height\75\47data:photo.height\47 expr:src\75\47data:photo.url\47 expr:width\75\47data:photo.width\47/\76\74/a\76\n\74/b:if\76\n\74dl class\75\47profile-datablock\47\76\n\74dt class\75\47profile-data\47\76\74data:displayname\76\74/data:displayname\76\74/dt\76\n\74b:if cond\75\47data:showlocation \75\75 \46quot;true\46quot;\47\76\n\74dd class\75\47profile-data\47\76\74data:location\76\74/data:location\76\74/dd\76\n\74/b:if\76\n\74b:if cond\75\47data:aboutme !\75 \46quot;\46quot;\47\76\74dd class\75\47profile-textblock\47\76\74img height\75\047133\47 src\75\47http://bp0.blogger.com/_4sbxCBha3lY/RfoW9T8Tm3I/AAAAAAAAAZ8/zGM4aLX089M/s400/me2-thumb.jpg\47 style\75\47margin:5px\47 width\75\047200\47/\76\74br/\76\74data:aboutme\76\74/data:aboutme\76\74/dd\76\74br/\76\n\74a href\75\47http://paulbuchheit.blogspot.com/2007/03/are-you-my-audience.html\47\76Are you my audience?\74/a\76\74/b:if\76\n\74/dl\76\n\74/b:if\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}}, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title !\75 \46quot;\46quot;\47\76\n\74h2 class\75\47title\47\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74data:content\76\74/data:content\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\076'}}, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar',{'main': {'varName': '', 'template': '\74b:if cond\75\47data:title\47\76\n\74h2\76\74data:title\76\74/data:title\76\74/h2\76\n\74/b:if\76\n\74div class\75\47widget-content\47\76\n\74div id\75\47ArchiveList\47\76\n\74div expr:id\75\47data:widget.instanceId + \46quot;_ArchiveList\46quot;\47\76\n\74b:if cond\75\47data:style \75\75 \46quot;HIERARCHY\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;FLAT\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47flat\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:style \75\75 \46quot;MENU\46quot;\47\76\n\74b:include data\75\47data\47 name\75\47menu\47\76\74/b:include\76\n\74/b:if\76\n\74/div\76\n\74/div\76\n\74b:include name\75\47quickedit\47\76\74/b:include\76\n\74/div\076'}, 'flat': {'varName': 'data', 'template': '\74ul\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\n\74li class\75\47archivedate\47\76\n\74a expr:href\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76\74/a\76 (\74data:i.post-count\76\74/data:i.post-count\76)\n      \74/li\76\n\74/b:loop\76\n\74/ul\076'}, 'menu': {'varName': 'data', 'template': '\74select expr:id\75\47data:widget.instanceId + \46quot;_ArchiveMenu\46quot;\47\76\n\74option value\75\47\47\76\74data:title\76\74/data:title\76\74/option\76\n\74b:loop values\75\47data:data\47 var\75\47i\47\76\n\74option expr:value\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76 (\74data:i.post-count\76\74/data:i.post-count\76)\74/option\76\n\74/b:loop\76\n\74/select\076'}, 'interval': {'varName': 'intervalData', 'template': '\74b:loop values\75\47data:intervalData\47 var\75\47i\47\76\n\74ul\76\n\74li expr:class\75\47\46quot;archivedate \46quot; + data:i.expclass\47\76\n\74b:include data\75\47i\47 name\75\47toggle\47\76\74/b:include\76\n\74a class\75\47post-count-link\47 expr:href\75\47data:i.url\47\76\74data:i.name\76\74/data:i.name\76\74/a\76\n\74span class\75\47post-count\47 dir\75\47ltr\47\76(\74data:i.post-count\76\74/data:i.post-count\76)\74/span\76\n\74b:if cond\75\47data:i.data\47\76\n\74b:include data\75\47i.data\47 name\75\47interval\47\76\74/b:include\76\n\74/b:if\76\n\74b:if cond\75\47data:i.posts\47\76\n\74b:include data\75\47i.posts\47 name\75\47posts\47\76\74/b:include\76\n\74/b:if\76\n\74/li\76\n\74/ul\76\n\74/b:loop\076'}, 'toggle': {'varName': 'interval', 'template': '\74b:if cond\75\47data:interval.toggleId\47\76\n\74b:if cond\75\47data:interval.expclass \75\75 \46quot;expanded\46quot;\47\76\n\74a class\75\47toggle\47 expr:href\75\47data:widget.actionUrl + \46quot;\46amp;amp;action\75toggle\46quot; +       \46quot;\46amp;amp;dir\75close\46amp;amp;toggle\75\46quot; + data:interval.toggleId +       \46quot;\46amp;amp;toggleopen\75\46quot; + data:toggleopen\47\76\n\74span class\75\47zippy toggle-open\47\76\46amp;#9660; \74/span\76\n\74/a\76\n\74b:else\76\74/b:else\76\n\74a class\75\47toggle\47 expr:href\75\47data:widget.actionUrl + \46quot;\46amp;amp;action\75toggle\46quot; +         \46quot;\46amp;amp;dir\75open\46amp;amp;toggle\75\46quot; + data:interval.toggleId +         \46quot;\46amp;amp;toggleopen\75\46quot; + data:toggleopen\47\76\n\74span class\75\47zippy\47\76\46amp;#9658; \74/span\76\n\74/a\76\n\74/b:if\76\n\74/b:if\076'}, 'posts': {'varName': 'posts', 'template': '\74ul class\75\47posts\47\76\n\74b:loop values\75\47data:posts\47 var\75\47i\47\76\n\74li\76\74a expr:href\75\47data:i.url\47\76\74data:i.title\76\74/data:i.title\76\74/a\76\74/li\76\n\74/b:loop\76\n\74/ul\076'}}, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main'));
+</script>
+</body>
+</html>
